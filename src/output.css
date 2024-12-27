@@ -644,22 +644,6 @@ video {
   z-index: 10;
 }
 
-.col-span-3 {
-  grid-column: span 3 / span 3;
-}
-
-.col-span-2 {
-  grid-column: span 2 / span 2;
-}
-
-.col-start-3 {
-  grid-column-start: 3;
-}
-
-.col-start-2 {
-  grid-column-start: 2;
-}
-
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -766,6 +750,10 @@ video {
   width: 60px;
 }
 
+.w-\[70px\] {
+  width: 70px;
+}
+
 .w-\[80px\] {
   width: 80px;
 }
@@ -780,10 +768,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[70px\] {
-  width: 70px;
 }
 
 .max-w-2xl {
@@ -874,6 +858,10 @@ video {
   overflow: hidden;
 }
 
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -924,6 +912,11 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
+.bg-red-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(185 28 28 / var(--tw-bg-opacity, 1));
+}
+
 .fill-current {
   fill: currentColor;
 }
@@ -959,6 +952,10 @@ video {
 
 .pb-16 {
   padding-bottom: 4rem;
+}
+
+.pb-28 {
+  padding-bottom: 7rem;
 }
 
 .pb-32 {
@@ -1013,11 +1010,6 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
 }
 
 .font-bold {
@@ -1078,6 +1070,15 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.text-blue-500 {
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246 / var(--tw-text-opacity, 1));
+}
+
+.underline {
+  text-decoration-line: underline;
 }
 
 .opacity-50 {
@@ -1221,28 +1222,8 @@ body {
     position: static;
   }
 
-  .lg\:col-span-3 {
-    grid-column: span 3 / span 3;
-  }
-
   .lg\:col-span-2 {
     grid-column: span 2 / span 2;
-  }
-
-  .lg\:col-span-1 {
-    grid-column: span 1 / span 1;
-  }
-
-  .lg\:col-start-2 {
-    grid-column-start: 2;
-  }
-
-  .lg\:col-start-3 {
-    grid-column-start: 3;
-  }
-
-  .lg\:col-start-4 {
-    grid-column-start: 4;
   }
 
   .lg\:mb-3 {
@@ -1269,10 +1250,6 @@ body {
     width: 100px;
   }
 
-  .lg\:w-\[120px\] {
-    width: 120px;
-  }
-
   .lg\:w-\[140px\] {
     width: 140px;
   }
@@ -1283,10 +1260,6 @@ body {
 
   .lg\:w-\[190px\] {
     width: 190px;
-  }
-
-  .lg\:w-\[2000px\] {
-    width: 2000px;
   }
 
   .lg\:w-\[200px\] {
@@ -1436,11 +1409,6 @@ body {
   .\32xl\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
-  }
-
-  .\32xl\:text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
   }
 
   .\32xl\:text-xl {
