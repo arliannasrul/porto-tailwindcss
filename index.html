@@ -7,8 +7,47 @@
     <title>Kenalan yuk</title>
 </head>
 <body>
+<!---Navbar start-->
+<header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10 xl:px-5">
+    <div class="container px-4 lg:px-10 max-w-screen-xl mx-auto">
+        <div class="flex items-center justify-between relative">
+            <div class="px-4">
+                <a href="#home" class="font-bold text-lg text-blue-400 block py-6 xl:text-xl 2xl:-translate-x-36 2xl:text-2xl">Arlian Nasrul</a>
+            </div>
+            <div class="flex justify-center">
+                <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 top-5 lg:hidden">
+                    <span class="hamburger-line transition origin-top-left"></span>
+                    <span class="hamburger-line transition"></span>
+                    <span class="hamburger-line transition origin-bottom-left"></span>
+                </button>
+                <div>
+                    <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-0 top-full lg:block lg:static lg:ml-30 lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none lg:pr-0 2xl:translate-x-36 ">
+                        <ul class="block lg:flex lg:space-x-8 lg:pl-0 ">
+                            <li class="group">
+                                <a href="#home" class="text-base text-black py-2 mx-4 flex group-hover:text-blue-400 2xl:text-xl">Beranda</a>
+                            </li>
+                            <li class="group">
+                                <a href="#about" class="text-base text-black py-2 mx-4 flex group-hover:text-blue-400 2xl:text-xl">Tentang Saya</a>
+                            </li>
+                            <li class="group">
+                                <a href="#portfolio" class="text-base text-black py-2 mx-4 flex group-hover:text-blue-400 2xl:text-xl">Portofolio</a>
+                            </li>
+                            <li class="group">
+                                <a href="#skills" class="text-base text-black py-2 mx-4 flex group-hover:text-blue-400 2xl:text-xl">Keahlian</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+<!---Nabar end-->
 <!-- Hero section start -->
-    <section id="home" class="pt-36">
+    <section id="home" class="pt-36 flex justify-center xl:pl-16">
         <div class="container">
             <div class="flex flex-wrap">
                 <div class="w-full self-center px-4 lg:w-1/2">
@@ -18,7 +57,7 @@
                     <button class="relative text-base font-semibold text-white bg-blue-400 rounded-lg px-4 py-3 hover:bg-blue-300 transition ease-in-out duration-300 lg:text-xl">
                         Hubungi saya
                         <span class="absolute -top-1 -right-1 flex h-3 w-3">
-                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-500 opacity-75"></span>
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
                             <span class="relative inline-flex rounded-full h-3 w-3 bg-blue-600"></span>
                         </span>
                     </button>                    
@@ -38,7 +77,7 @@
  <!-- Hero section end -->
 
  <!----About section Start-->
-<section id="about" class="pt-20 pb-32">
+<section id="about" class="pt-20 pb-32 flex justify-center xl:px-16 ">
     <div class="container">
         <div class="flex flex-wrap">
             <div class="w-full px-4 mb-10 lg:w-1/2">
@@ -47,9 +86,9 @@
                 <p class="font-medium text-base text-slate-500 max-w-xl lg:text-lg">Halo, perkenalkan aku <strong>Nasrul</strong>, seorang mahasiswa aktif semester 3 di perguruan tinggi swasta yang berada kota Malang yang indah ini. Aku mengambil jurusan S1 Sistem Infomasi. Selain ngoding, aku juga suka bermain game fps competitif seperti Valorant🎮, mendengarkan musik🎵 dan aku suka dengan alam 🌄 
                 </p>
             </div>
-            <div class="w-full px-4 mb-10 lg:w-1/2">
+            <div class="w-full px-4 mb-10 lg:w-1/2 ">
                 <h3 class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-12">Ayo berteman!</h3>
-                <p class="font-medium text-base text-slate-500 pb-6 max-w-screen-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quidem magnam facere? Maiores culpa placeat doloribus alias non laboriosam quod? Neque numquam inventore animi minima?
+                <p class="font-medium text-base text-slate-500 pb-6 max-w-xl ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quidem magnam facere? Maiores culpa placeat doloribus alias non laboriosam quod? Neque numquam inventore animi minima?
                 </p>
                 <div class="flex items-center">
                 <!---YOUTUBE-->
@@ -77,5 +116,96 @@
 </section>
 
  <!---About section end-->
+
+ <!---portfolio start-->
+<section id="portfolio" class="pt-24 pb-16 bg-slate-200">
+    <div class="">
+        <div class="w-full px-4">
+            <div class="max-w-xl mx-auto text-center mb-16">
+                <h4 class="font-semibold text-lg text-blue-400 mb-2 xl:text-3xl xl:pb-4">Portofolio</h4>
+                <h2 class="font-bold text-black text-3xl mb-4 xl:text-5xl">Proyek Terbaru</h2>
+                <p class="xl:text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis autem aspernatur alias repudiandae ipsam omnis vero pariatur ipsa molestiae soluta.</p>
+            </div>
+        </div>
+
+        <div class="w-full px-4 flex flex-wrap justify-center xl:w-9/12 xl:mx-auto">
+            <div class="mb-12 p-4 md:w-1/2">
+                <div class="rounded-md shadow-md overflow-hidden">
+                    <img src="img/porto/p1.png" alt="proyek1" width="w-full">
+                </div>
+                <h3 class="font-semibold text-xl text-black mt-5 xl:text-2xl">Landing Page</h3>
+                <p class="font-medium text-base text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem consectetur consequuntur sunt! Dignissimos, repellat. Aut.</p>
+            </div>
+        
+            <div class="mb-12 p-4 md:w-1/2">
+                <div class="rounded-md shadow-md overflow-hidden">
+                    <img src="img/porto/p2.png" alt="proyek1" width="w-full">
+                </div>
+                <h3 class="font-semibold text-xl text-black mt-5">Landing Page</h3>
+                <p class="font-medium text-base text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem consectetur consequuntur sunt! Dignissimos, repellat. Aut.</p>
+            </div>
+            <div class="mb-12 p-4 md:w-1/2">
+                <div class="rounded-md shadow-md overflow-hidden">
+                    <img src="img/porto/p3.png" alt="proyek1" width="w-full">
+                </div>
+                <h3 class="font-semibold text-xl text-black mt-5">Landing Page</h3>
+                <p class="font-medium text-base text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem consectetur consequuntur sunt! Dignissimos, repellat. Aut.</p>
+            </div>
+            <div class="mb-12 p-4 md:w-1/2">
+                <div class="rounded-md shadow-md overflow-hidden">
+                    <img src="img/porto/p4.png" alt="proyek1" width="w-full">
+                </div>
+                <h3 class="font-semibold text-xl text-black mt-5">Landing Page</h3>
+                <p class="font-medium text-base text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem consectetur consequuntur sunt! Dignissimos, repellat. Aut.</p>
+            </div>
+        </div>
+    </div>
+</section>
+ <!---porfolio end-->
+
+<!----Client start-->
+<section id="skills" class="pt-36 pb-32 bg-slate-700">
+    <div class="container mx-auto px-4">
+        <div class="w-full px-4">
+            <div class="max-w-2xl mx-auto text-center mb-16">
+                <h4 class="font-semibold text-lg text-blue-400 mb-2 xl:text-3xl xl:pb-4">Keahlian</h4>
+                <h2 class="font-bold text-white text-2xl mb-4 xl:text-5xl">Skill yang Saya Kuasai</h2>
+                <p class="xl:text-2xl text-slate-400">Keep learning!</p>
+            </div>
+        </div>
+        <div class="w-full px-4">
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-10 items-center justify-center">
+                <a href="#" class="py-2">
+                    <img src="img/keahlian/html_css.svg" alt="html css" class="w-[90px] lg:w-[140px] mx-auto grayscale hover:grayscale-0 transition duration-500"/>
+                </a>
+                <a href="#" class="py-2">
+                    <img src="img/keahlian/js.svg" alt="Javascript" class="w-[60px] lg:w-[100px] mx-auto rounded-md grayscale hover:grayscale-0 transition duration-500"/>
+                </a>
+                <a href="#" class="py-2">
+                    <img src="img/keahlian/python.svg" alt="Python" class="w-[95px] lg:w-[150px] mx-auto grayscale hover:grayscale-0 transition duration-500"/>
+                </a>
+                <a href="#" class="py-2">
+                    <img src="img/keahlian/tailwind.svg" alt="Tailwind" class="w-[120px] lg:w-[190px] mx-auto grayscale hover:grayscale-0 transition duration-500"/>
+                </a>
+                <a href="#" class="py-2">
+                    <img src="img/keahlian/git.svg" alt="Git" class="w-[80px] lg:w-[150px] mx-auto grayscale hover:grayscale-0 transition duration-500"/>
+                </a>
+                <a href="#" class="py-2 lg:col-span-2">
+                    <img src="img/keahlian/github-mark.svg" alt="Github" class=" w-[60px] lg:w-[90px] opacity-50 hover:opacity-100 mx-auto grayscale hover:grayscale-0 transition duration-500 "/>
+                </a>
+                <a href="#" class="py-2">
+                    <img src="img/keahlian/gitlab.svg" alt="Gitlab" class="w-[130px] lg:w-[200px] mx-auto grayscale hover:grayscale-0 transition duration-500"/>
+                </a>
+                <a href="#" class="py-2 lg:col-span-2">
+                    <img src="img/keahlian/valorant.svg" alt="Valoramt" class="w-[70px] lg:w-[100px] mx-auto grayscale hover:grayscale-0 transition duration-500"/>
+                </a>
+            </div>
+          
+        </div>
+    </div>
+</section>
+<!----Client end-->
+
+<script src="dist/js/script.js"></script>
 </body>
 </html>
