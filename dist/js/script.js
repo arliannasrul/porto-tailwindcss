@@ -10,6 +10,9 @@ window.onscroll = function() {
     }
 };
 
+document.getElementById('hubungi').addEventListener('click', function () {
+    alert('Maaf saat ini pemilik belum bisa dihubungi hehe');
+});
 
 //hamburger
 
