@@ -16,9 +16,31 @@ document.getElementById('hubungi').addEventListener('click', function () {
 
 //hamburger
 
-const hamburger = document.querySelector('#hamburger');
-const navMenu = document.querySelector('#nav-menu');
-hamburger.addEventListener('click', function(){
-    hamburger.classList.toggle('hamburger-active');
-    navMenu.classList.toggle('hidden');
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.querySelector('#hamburger');
+    const navMenu = document.querySelector('#nav-menu');
+    const educationLink = document.querySelector('#education2'); // Pastikan ID ini benar
+
+    hamburger.addEventListener('click', function() {
+        hamburger.classList.toggle('hamburger-active');
+        navMenu.classList.toggle('hidden');
+
+        updateEducationLink(); // Panggil fungsi untuk memperbarui href
+    });
+
+    window.addEventListener('resize', updateEducationLink); // Panggil saat resize
+
+    function updateEducationLink() {
+        const isMobile = window.innerWidth < 768; // Sesuaikan breakpoint ini
+
+        if (!navMenu.classList.contains('hidden')) { // Cek menu terbuka
+            if (isMobile) {
+                educationLink.setAttribute('href', '#educationMobile');
+            } else {
+                educationLink.setAttribute('href', '#education');
+            }
+        } else if (!isMobile) {
+            educationLink.setAttribute('href', '#education'); //desktop view
+        }
+    }
 });
