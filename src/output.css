@@ -300,9 +300,6 @@
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
   }
-  .mt-28 {
-    margin-top: calc(var(--spacing) * 28);
-  }
   .mr-2 {
     margin-right: calc(var(--spacing) * 2);
   }
